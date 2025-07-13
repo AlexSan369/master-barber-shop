@@ -49,7 +49,7 @@ function CarouselSlide({ product }) {
         <p className="text-gray-500 mb-1">{product.description}</p>
         <p className="text-gray-500 mb-4">{product.details}</p>
         <p className="text-3xl font-light text-text mb-6">R$ {product.price}</p>
-        <button className="border-2 border-accent text-accent font-bold py-3 px-12 rounded-md hover:bg-accent hover:text-white transition-colors duration-300">
+        <button className="border-2 border-accent text-accent font-bold py-3 px-12 hover:bg-accent hover:text-white transition-colors duration-300">
           COMPRAR
         </button>
       </div>
@@ -68,9 +68,9 @@ export default function Shop() {
         <CarouselSlide product={currentProduct} />
         
         <div className="flex justify-center space-x-3 mt-8">
-          <button className="w-3 h-3 bg-accent rounded-full"></button>
-          <button className="w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400"></button>
-          <button className="w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400"></button>
+          <button className="w-3 h-3 bg-accent"></button>
+          <button className="w-3 h-3 bg-gray-300 hover:bg-gray-400"></button>
+          <button className="w-3 h-3 bg-gray-300 hover:bg-gray-400"></button>
         </div>
       </div>
     </section>

@@ -13,13 +13,13 @@ function ImageGrid() {
     // AJUSTE 2: Troquei h-9/10 (inválido) por h-full para que a grade ocupe toda a altura do seu container pai.
     <div className="grid grid-cols-3 gap-3 h-full">
       <div className="col-span-1">
-        <img src={images[0]} alt="Interior da barbearia 1" className="w-full h-full object-cover rounded-lg shadow-lg" />
+        <img src={images[0]} alt="Interior da barbearia 1" className="w-full h-full object-cover shadow-lg" />
       </div>
       <div className="col-span-1">
-        <img src={images[1]} alt="Detalhe do corte" className="w-full h-full object-cover rounded-lg shadow-lg" />
+        <img src={images[1]} alt="Detalhe do corte" className="w-full h-full object-cover shadow-lg" />
       </div>
       <div className="col-span-1">
-        <img src={images[2]} alt="Cliente na cadeira" className="w-full h-full object-cover rounded-lg shadow-lg" />
+        <img src={images[2]} alt="Cliente na cadeira" className="w-full h-full object-cover shadow-lg" />
       </div>
     </div>
   );
@@ -48,7 +48,7 @@ export default function CourseCTA() {
             </span>
             <a
               href="#"
-              className="bg-background text-primary font-bold text-lg py-4 px-12 rounded-md hover:opacity-90 transition-opacity w-full mt-4 md:mt-0 md:w-auto text-center"
+              className="bg-background text-primary font-bold text-lg py-4 px-12 hover:opacity-90 transition-opacity w-full mt-4 md:mt-0 md:w-auto text-center"
             >
               QUERO SABER MAIS
             </a>

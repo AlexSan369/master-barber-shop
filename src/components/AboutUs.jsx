@@ -14,15 +14,15 @@ function ImageGrid() {
     <div className="grid grid-cols-3 gap-3 pb-3 h-full">
 
       <div className="col-span-1">
-        <img src={images[0]} alt="Interior da barbearia 1" className="w-full h-full object-cover rounded-lg shadow-lg" />
+        <img src={images[0]} alt="Interior da barbearia 1" className="w-full h-full object-cover shadow-lg" />
       </div>
       
       <div className="col-span-1">
-        <img src={images[1]} alt="Detalhe do corte" className="w-full h-full object-cover rounded-lg shadow-lg" />
+        <img src={images[1]} alt="Detalhe do corte" className="w-full h-full object-cover shadow-lg" />
       </div>
       
       <div className="col-span-1">
-        <img src={images[2]} alt="Cliente na cadeira" className="w-full h-full object-cover rounded-lg shadow-lg" />
+        <img src={images[2]} alt="Cliente na cadeira" className="w-full h-full object-cover shadow-lg" />
       </div>
     </div>
   );
@@ -44,7 +44,7 @@ export default function AboutUs() {
           <p className="text-lg text-gray-500 leading-relaxed mb-8">
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-          <button className="bg-accent text-white font-bold text-lg py-4 px-10 rounded-md hover:opacity-90 transition-opacity">
+          <button className="bg-accent text-white font-bold text-lg py-4 px-10 hover:opacity-90 transition-opacity">
             Entenda Nossa História &rarr;
           </button>
         </div>

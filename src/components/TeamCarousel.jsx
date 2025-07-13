@@ -33,7 +33,7 @@ function TeamMemberSlide({ member, onNext, onPrev }) {
     <div className="flex flex-col md:flex-row gap-8">
       {/* Coluna da Esquerda: Imagem */}
       <div className="w-full md:w-1/3 bg-primary shadow-xl px-auto flex items-end">
-        <img src={member.imageUrl} alt={member.name} className="rounded-lg w-full h-3/4 object-cover" />
+        <img src={member.imageUrl} alt={member.name} className="w-full h-3/4 object-cover" />
       </div>
 
       {/* Coluna da Direita: Informações */}
@@ -45,15 +45,15 @@ function TeamMemberSlide({ member, onNext, onPrev }) {
         <h3 className="font-serif text-6xl text-text font-bold">{member.name}</h3>
         
         <div className="container flex justify-end space-x-4 my-6 w-full">
-          <button onClick={onPrev} className="w-12 h-12 flex items-center justify-center rounded-md border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors">
+          <button onClick={onPrev} className="w-12 h-6 flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors">
             &larr;
           </button>
-          <button onClick={onNext} className="w-12 h-12 flex items-center justify-center rounded-md border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors">
+          <button onClick={onNext} className="w-12 h-6 flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors">
             &rarr;
           </button>
         </div>
 
-        <div className="w-full bg-primary text-white p-8 rounded-xl shadow-xl">
+        <div className="w-full bg-primary text-white p-8 shadow-xl">
           <h4 className="font-serif text-2xl font-bold mb-6">{member.role}</h4>
           <p className="mt-2 text-lg leading-9 text-gray-300">{member.bio}</p>
         </div>

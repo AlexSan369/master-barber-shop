@@ -26,7 +26,7 @@ export default function Hero() {
         </p>
         <a
           href="#agendamento"
-          className="bg-accent text-white font-bold text-lg py-4 px-12 rounded-md hover:opacity-90 transition-opacity duration-300"
+          className="bg-accent text-white font-bold text-lg py-4 px-12 hover:opacity-90 transition-opacity duration-300"
         >
           AGENDAR HORÁRIO
         </a>

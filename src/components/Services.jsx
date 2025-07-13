@@ -11,14 +11,14 @@ const servicesData = [
 
 function ServiceCard({ service }) {
   return (
-    <div className="flex-shrink-0 w-72 mr-8 bg-white rounded-lg shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+    <div className="flex-shrink-0 w-72 mr-8 bg-white shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
       <img src={service.imageUrl} alt={service.name} className="w-full h-48 object-cover" />
       <div className="p-5">
         <h3 className="font-serif text-2xl font-bold text-text text-center">{service.name}</h3>
         <p className="text-sm text-gray-400 text-center">{service.details}</p>
         <div className="flex items-center justify-between mt-4">
           <span className="text-xl font-bold text-text">R$ {service.price},00</span>
-          <button className="bg-accent text-white font-bold py-2 px-5 rounded-md hover:opacity-90 transition-opacity">
+          <button className="bg-accent text-white font-bold py-2 px-5 hover:opacity-90 transition-opacity">
             AGENDAR
           </button>
         </div>
@@ -48,10 +48,10 @@ export default function Services() {
             Confira nossos serviços profissionais de cuidados e outros tratamentos que irão completar o seu visual.
           </p>
           <div className="flex justify-end space-x-4">
-            <button onClick={goToPrevious} className="w-12 h-12 flex items-center justify-center rounded-md border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed" disabled={currentIndex === 0}>
+            <button onClick={goToPrevious} className="w-12 h-6 flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed" disabled={currentIndex === 0}>
               &larr;
             </button>
-            <button onClick={goToNext} className="w-12 h-12 flex items-center justify-center rounded-md border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed" disabled={currentIndex >= maxIndex}>
+            <button onClick={goToNext} className="w-12 h-6 flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed" disabled={currentIndex >= maxIndex}>
               &rarr;
             </button>
           </div>
@@ -60,7 +60,7 @@ export default function Services() {
         {/* Coluna da Direita: Carrossel */}
         {/* AJUSTE: Adicionando 'overflow-hidden' ao container principal do carrossel */}
         <div className=" relative overflow-hidden"> 
-          <div className="absolute top-0 left-7 right-0 h-[75%] bg-primary rounded-l-xl z-0"></div>
+          <div className="absolute top-0 left-7 right-0 h-[65%] bg-primary z-0"></div>
           
           <div className="relative pt-10">
             <div

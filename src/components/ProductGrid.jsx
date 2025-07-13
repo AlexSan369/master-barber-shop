@@ -32,7 +32,7 @@ const gridProducts = [
 // Adicionamos 'className' como uma prop para flexibilidade de layout
 function ProductCard({ product, className }) {
   return (
-    <div className={`group relative h-full w-full overflow-hidden rounded-lg shadow-lg ${className}`}>
+    <div className={`group relative h-full w-full overflow-hidden shadow-lg ${className}`}>
       <img
         src={product.imageUrl}
         alt={product.name}
