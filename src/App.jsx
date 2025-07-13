@@ -4,6 +4,10 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Shop from './components/Shop';
 import ProductGrid from './components/ProductGrid';
+import TeamCarousel from './components/TeamCarousel';
+import AboutUs from './components/AboutUs';
+import CourseCTA from './components/CourseCTA';
+import Footer from './components/Footer';
 
 // Componente para a barra do topo com o logo
 function TopBar() {
@@ -51,14 +55,12 @@ export default function App() {
       <div className="container mx-auto">
         <Shop />
         <ProductGrid />
+
       </div>
-      
-      <footer className="bg-white mt-20 py-6">
-        <div className="container mx-auto text-center text-gray-400">
-          &copy; {new Date().getFullYear()} Master Barbearia. Todos os direitos reservados.
-        </div>
-      </footer>
-      
+        <TeamCarousel />
+        <AboutUs />
+        <CourseCTA />
+        <Footer />
     </div>
   )
 }
