@@ -1,0 +1,12 @@
+/* Arquivo: src/index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pequeno ajuste para aplicar a fonte 'Roboto' como padrão no corpo do site */
+body {
+  font-family: 'Roboto', sans-serif;
+}
